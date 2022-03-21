@@ -90,7 +90,7 @@ export default ({navigation, route}) => {
           style={styles.input}
           onChangeText={e => setCar(car => ({...car, age: e}))}
           value={String(car.age)}
-          placeholder="Digite a idade"
+          placeholder="Digite o ano"
         />
       </SafeAreaView>
       <View style={styles.buttons}>

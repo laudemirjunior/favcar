@@ -76,7 +76,7 @@ export default ({navigation}) => {
           onChangeText={setAge}
           value={age}
           keyboardType="numeric"
-          placeholder="Digite a idade"
+          placeholder="Digite o ano"
         />
       </SafeAreaView>
       <View style={styles.buttons}>
