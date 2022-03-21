@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {View, SafeAreaView, TextInput, StyleSheet} from 'react-native';
 import Button from '../../components/Button';
 import Header from '../../components/Header';
+import {newToast} from '../../functions/newToast';
 
 export default ({navigation}) => {
   const [title, setTitle] = useState('');
@@ -18,16 +19,16 @@ export default ({navigation}) => {
 
   const add = () => {
     if (title.length < 1) {
-      return alert('Preencha o modelo corretamente');
+      return newToast('Preencha o modelo corretamente');
     }
     if (brand.length < 1) {
-      return alert('Preencha o marca corretamente');
+      return newToast('Preencha o marca corretamente');
     }
     if (price.length <= 3) {
-      return alert('Preencha o preço corretamente');
+      return newToast('Preencha o preço corretamente');
     }
     if (age.length !== 4) {
-      return alert('Preencha o ano corretamente');
+      return newToast('Preencha o ano corretamente');
     } else {
       axios
         .post('http://api-test.bhut.com.br:3000/api/cars', {
@@ -37,14 +38,11 @@ export default ({navigation}) => {
           age: age,
         })
         .then(() => {
-          alert('Carro salvo com sucesso');
+          newToast('Carro salvo com sucesso');
           setTitle('');
           setBrand('');
           setPrice('');
           setAge('');
-        })
-        .catch(error => {
-          alert(error);
         });
     }
   };

@@ -40,16 +40,15 @@ export default ({cars, onScroll}) => {
 
 const styles = StyleSheet.create({
   text: {
-    width: 100,
-    justifyContent: 'space-between',
     alignItems: 'baseline',
-    marginTop: 10,
+    marginTop: 25,
     flexDirection: 'row',
   },
   title: {
     fontSize: 24,
     fontWeight: '400',
     color: '#ffffff',
+    marginRight: 50,
   },
   brand: {
     fontSize: 18,

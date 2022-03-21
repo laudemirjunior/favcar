@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     height: 100,
     margin: 5,
     borderRadius: 20,
-    shadowColor: '#000',
+    shadowColor: '#000000',
     shadowOffset: {
       width: 0,
       height: 3,
@@ -100,7 +100,6 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   texts: {
-    width: 100,
     flexDirection: 'row',
     alignItems: 'baseline',
     justifyContent: 'space-between',
@@ -108,6 +107,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     color: '#1E4ABB',
+    marginRight: 50,
   },
   brand: {
     fontSize: 18,

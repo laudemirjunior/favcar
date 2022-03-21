@@ -11,7 +11,7 @@ export default ({children, color = true, ...rest}) => {
 
 const styles = StyleSheet.create({
   touchableOpacity: color => ({
-    backgroundColor: color ? '#1E4ABB' : '#d60000',
+    backgroundColor: color ? '#3E5FB4' : '#d60000',
     justifyContent: 'center',
     alignItems: 'center',
     width: 80,

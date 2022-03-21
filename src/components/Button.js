@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   touchableOpacity: color => ({
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: color ? '#d60000' : '#1E4ABB',
+    backgroundColor: color ? '#d60000' : '#3E5FB4',
     width: '90%',
     height: 45,
     borderRadius: 10,

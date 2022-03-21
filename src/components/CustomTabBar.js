@@ -43,7 +43,7 @@ export default ({state, navigation}) => {
 const styles = StyleSheet.create({
   view: {
     height: 50,
-    backgroundColor: '#1E4ABB',
+    backgroundColor: '#3E5FB4',
     flexDirection: 'row',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
