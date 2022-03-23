@@ -36,7 +36,7 @@ export default ({navigation}) => {
                     </Text>
                   </View>
                   <View style={styles.buttons}>
-                    <SmallButton onPress={() => addFavorite(element)}>
+                    <SmallButton onPress={() => addFavorite(item)}>
                       Salvar
                     </SmallButton>
                     <SmallButton
